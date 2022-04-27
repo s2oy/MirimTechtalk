@@ -13,7 +13,7 @@ export const Icon = styled.img`
   margin-left: 32px;
 `;
 
-export const SearchBar = styled.div`
+export const SearchWrapper = styled.div`
   button {
     width: 18px;
     height: 19px;
@@ -21,7 +21,7 @@ export const SearchBar = styled.div`
     left: 327px;
     top: 21px;
     background: none;
-    color: #7d8183;
+    color: #8e9294;
     border: 1px solid #57606a;
     border-radius: 3px;
   }
@@ -41,6 +41,24 @@ export const Search = styled.input`
   ::placeholder {
     color: #c5c6c8;
     font-size: 14px;
-    font-style: bold;
+  }
+`;
+
+export const NavWrapper = styled.div`
+  position: absolute;
+  display: flex;
+  /* background-color: red; */
+
+  top: 25px;
+  left: 350px;
+  span {
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    margin-left: 18px;
+    cursor: pointer;
+    &:hover {
+      color: #c5c6c8;
+    }
   }
 `;
