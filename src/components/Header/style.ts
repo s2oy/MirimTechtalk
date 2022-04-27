@@ -67,7 +67,7 @@ export const ProfileWrapper = styled.div`
   position: absolute;
   display: flex;
   /* background-color: red; */
-  top: 20px;
+  top: 23px;
   right: 40px;
 `;
 
