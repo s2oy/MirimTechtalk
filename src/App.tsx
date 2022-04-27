@@ -1,9 +1,16 @@
 import React from "react";
-import logo from "./logo.svg";
+import {Router} from "react-router-dom";
+import {Reset} from "styled-reset";
 import "./App.css";
+import Header from "./components/Header/Header";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Reset />
+      <Header />
+    </>
+  );
 }
 
 export default App;
