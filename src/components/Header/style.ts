@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 62px;
   background-color: #24292f;
   position: relative;
@@ -61,4 +61,24 @@ export const NavWrapper = styled.div`
       color: #c5c6c8;
     }
   }
+`;
+
+export const ProfileWrapper = styled.div`
+  position: absolute;
+  display: flex;
+  /* background-color: red; */
+  top: 20px;
+  right: 40px;
+`;
+
+export const Alarm = styled.img``;
+export const Plus = styled.img`
+  margin-left: 22px;
+`;
+export const Profile = styled.div`
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: red;
+  margin-left: 22px;
 `;
