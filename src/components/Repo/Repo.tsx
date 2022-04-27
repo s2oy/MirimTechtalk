@@ -6,6 +6,7 @@ import Repository from "../../assets/svgfiles/repo.svg";
 import Project from "../../assets/svgfiles/projects.svg";
 import Package from "../../assets/svgfiles/packages.svg";
 import Star from "../../assets/svgfiles/star.svg";
+import RepoItem from "./Item/RepoItem";
 
 const Nav = styled.div`
   display: inline-block;
@@ -64,6 +65,7 @@ const Repo = () => {
             <span>Stars</span>
           </Nav>
         </S.NavWrapper>
+        <RepoItem />
       </S.Wrapper>
     </>
   );
