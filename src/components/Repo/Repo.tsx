@@ -9,8 +9,8 @@ import Star from "../../assets/svgfiles/star.svg";
 
 const Nav = styled.div`
   display: inline-block;
-  padding: 10px 5px 14px 5px;
-  margin: 28px 30px 0 0;
+  padding: 10px 30px 14px 13px;
+  margin: 28px 0 0 0;
 
   span {
     margin-left: 10px;
