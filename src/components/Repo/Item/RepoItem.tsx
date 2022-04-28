@@ -7,8 +7,18 @@ const RepoItem = () => {
     <>
       <S.Wrapper>
         <img src={Repository} />
-        <S.Title>title test</S.Title>
-        <S.Public>Public</S.Public>
+
+        <S.TitleWrapper>
+          <S.Title>title test</S.Title>
+          <S.Public>Public</S.Public>
+        </S.TitleWrapper>
+
+        <S.Description>Repository Item Description test</S.Description>
+
+        <S.LangWrapper>
+          <S.Color></S.Color>
+          <S.Language>Javascript</S.Language>
+        </S.LangWrapper>
       </S.Wrapper>
     </>
   );

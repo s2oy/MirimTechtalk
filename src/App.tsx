@@ -1,6 +1,6 @@
 import React from "react";
 import {Router} from "react-router-dom";
-import {Reset} from "styled-reset";
+import {GlobalStyle} from "./GlobalStyle";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Repo from "./components/Repo/Repo";
@@ -8,7 +8,7 @@ import Repo from "./components/Repo/Repo";
 function App() {
   return (
     <>
-      <Reset />
+      <GlobalStyle />
       <Header />
       <Repo />
     </>
