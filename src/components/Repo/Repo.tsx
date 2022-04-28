@@ -10,17 +10,18 @@ import RepoItem from "./Item/RepoItem";
 
 const Nav = styled.div`
   display: inline-block;
-  padding: 10px 28px 14px 12px;
+  padding: 10px 18px 14px 12px;
   margin: 28px 0 0 0;
 
   span {
-    margin-left: 10px;
-    font-size: 15px;
-    letter-spacing: 0.2px;
+    margin-left: 8px;
+    font-size: 14px;
+    /* letter-spacing: 0.2px; */
   }
 
   img {
     vertical-align: middle;
+    margin-left: 6px;
     path {
       fill: #596069;
     }
@@ -31,10 +32,11 @@ const Nav = styled.div`
 
   &.check {
     border-bottom: 2px solid #ff8737;
-    margin-left: 460px;
+    margin-left: 440px;
 
     span {
       font-weight: 700;
+      letter-spacing: -0.2px;
     }
   }
 `;

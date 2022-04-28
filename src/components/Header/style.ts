@@ -42,6 +42,7 @@ export const Search = styled.input`
   ::placeholder {
     color: #c5c6c8;
     font-size: 14px;
+    /* font-weight: 700; */
   }
 `;
 
@@ -54,9 +55,11 @@ export const NavWrapper = styled.div`
   left: 350px;
   span {
     color: white;
-    font-size: 15px;
-    font-weight: 900;
+    font-size: 14px;
+    font-weight: 700;
     margin-left: 18px;
+    letter-spacing: -0.2px;
+
     cursor: pointer;
     &:hover {
       color: #c5c6c8;
