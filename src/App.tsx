@@ -3,14 +3,16 @@ import {Router} from "react-router-dom";
 import {GlobalStyle} from "./GlobalStyle";
 import "./App.css";
 import Header from "./components/Header/Header";
-import Repo from "./components/Repo/Repo";
+import Nav from "./components/Nav/Nav";
+import Profile from "./components/Profile/Profile";
 
 function App() {
   return (
     <>
       <GlobalStyle />
       <Header />
-      <Repo />
+      <Nav />
+      <Profile />
     </>
   );
 }

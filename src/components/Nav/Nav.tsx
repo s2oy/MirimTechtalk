@@ -6,9 +6,8 @@ import Repository from "../../assets/svgfiles/repo.svg";
 import Project from "../../assets/svgfiles/projects.svg";
 import Package from "../../assets/svgfiles/packages.svg";
 import Star from "../../assets/svgfiles/star.svg";
-import RepoItem from "./Item/RepoItem";
 
-const Nav = styled.div`
+const Navi = styled.div`
   display: inline-block;
   padding: 10px 18px 14px 12px;
   margin: 28px 0 0 0;
@@ -41,36 +40,35 @@ const Nav = styled.div`
   }
 `;
 
-const Repo = () => {
+const Nav = () => {
   return (
     <>
       <S.Wrapper>
         <S.NavWrapper>
-          <Nav className="check">
+          <Navi className="check">
             <img src={Overview} />
             <span>Overview</span>
-          </Nav>
-          <Nav>
+          </Navi>
+          <Navi>
             <img src={Repository} />
             <span>Repositories</span>
-          </Nav>
-          <Nav>
+          </Navi>
+          <Navi>
             <img src={Project} />
             <span>Projects</span>
-          </Nav>
-          <Nav>
+          </Navi>
+          <Navi>
             <img src={Package} />
             <span>Packages</span>
-          </Nav>
-          <Nav>
+          </Navi>
+          <Navi>
             <img src={Star} />
             <span>Stars</span>
-          </Nav>
+          </Navi>
         </S.NavWrapper>
-        <RepoItem />
       </S.Wrapper>
     </>
   );
 };
 
-export default Repo;
+export default Nav;
