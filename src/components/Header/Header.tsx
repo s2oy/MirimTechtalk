@@ -1,16 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import * as S from "./style";
 import Logo from "../../assets/svgfiles/logo.svg";
 import Alarm from "../../assets/svgfiles/alarm.svg";
 import Plus from "../../assets/svgfiles/plus.svg";
 
-const Header = () => {
+const Header = (props: any, {user}: any) => {
+  const [search, setSearch] = useState("");
+  const handleChange = (e: any) => setSearch(e.target.value);
+
+  console.log(handleChange);
   return (
     <S.Wrapper>
       <S.SearchWrapper>
         <S.Icon src={Logo} />
-        <S.Search placeholder="Search or jump to..." />
-        <button>/</button>
+        <S.Search placeholder="Search or jump to..." onChange={handleChange} />
+
+        <button onClick={(props: any) => alert(props.onSearch(search))}>
+          /
+        </button>
       </S.SearchWrapper>
 
       <S.NavWrapper>

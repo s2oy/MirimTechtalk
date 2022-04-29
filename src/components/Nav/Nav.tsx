@@ -40,6 +40,8 @@ const Navi = styled.div`
   }
 `;
 
+
+
 const Nav = () => {
   return (
     <>

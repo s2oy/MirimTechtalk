@@ -49,8 +49,8 @@ export const Public = styled.span`
 
 export const Grabber = styled.img`
   position: relative;
-  left: 250px;
   cursor: pointer;
+  left: 165px;
 `;
 
 export const Description = styled.span`
@@ -78,4 +78,27 @@ export const Language = styled.span`
   font-size: 12px;
   color: #57606a;
   letter-spacing: -0.2px;
+`;
+
+export const Fork = styled.img`
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  margin-left: 16px;
+`;
+export const ForkCount = styled.span`
+  font-size: 12px;
+  color: #57606a;
+  margin-left: 1px;
+`;
+export const Star = styled.img`
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  margin-left: 6px;
+`;
+export const StarCount = styled.span`
+  font-size: 12px;
+  color: #57606a;
+  margin-left: 1px;
 `;
