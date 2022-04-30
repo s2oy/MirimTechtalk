@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "./style";
 
-const Profile = () => {
+const Profile = ({user}: {user: any}) => {
   return (
     <>
       <S.Wrapper>

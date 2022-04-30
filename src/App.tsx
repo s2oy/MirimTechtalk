@@ -7,14 +7,14 @@ import Nav from "./components/Nav/Nav";
 import Profile from "./components/Profile/Profile";
 import Repo from "./components/Repo/Repo";
 
-function App(props: any) {
-  const [repo, setRepo] = useState([]);
+function App() {
+  const [repo, setRepo]: any = useState([]);
   const [loading, setLoading] = useState(true); //loading중일때
   const [user, setUser]: any = useState("");
 
   useEffect(() => {
     fetch(`https://api.github.com/users/seoyeon-baek/repos`, {
-      headers: {Authorization: ""},
+      headers: {Authorization: "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"},
     })
       .then(res => res.json()) //json형태로 변환
       .then(data => {
@@ -28,7 +28,7 @@ function App(props: any) {
       <GlobalStyle />
       <Header user={user} onSearch={setUser} />
       <Nav />
-      <Profile />
+      <Profile user={user} />
       <Repo repo={repo} />
     </>
   );

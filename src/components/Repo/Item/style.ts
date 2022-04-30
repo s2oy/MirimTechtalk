@@ -6,8 +6,11 @@ export const Wrapper = styled.div`
   /* background-color: red; */
   border-radius: 6px;
   border: 1px solid #d0d7de;
-  margin: 60px 0 0 430px;
-  padding: 16px;
+  margin: 18px 0 0 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 8px 16px 16px;
+  justify-content: space-between;
 `;
 
 export const TitleWrapper = styled.div`
@@ -48,9 +51,8 @@ export const Public = styled.span`
 `;
 
 export const Grabber = styled.img`
-  position: relative;
+  float: right;
   cursor: pointer;
-  left: 165px;
 `;
 
 export const Description = styled.span`
@@ -62,12 +64,18 @@ export const Description = styled.span`
   margin-bottom: 12px;
 `;
 
-export const LangWrapper = styled.div``;
+export const BottomWrapper = styled.div`
+  display: inline-block;
+`;
+
+export const LangWrapper = styled.div`
+  display: inline-block;
+`;
 
 export const Color = styled.div`
   width: 12px;
   height: 12px;
-  background-color: #f1e05a;
+  background-color: ${props => props.color}; //LangColor값 적용
   border-radius: 100%;
   display: inline-block;
   vertical-align: middle;
@@ -78,18 +86,25 @@ export const Language = styled.span`
   font-size: 12px;
   color: #57606a;
   letter-spacing: -0.2px;
+  margin-right: 16px;
 `;
 
+export const ForkWrapper = styled.div`
+  display: inline-block;
+`;
 export const Fork = styled.img`
   width: 14px;
   height: 14px;
   vertical-align: middle;
-  margin-left: 16px;
 `;
 export const ForkCount = styled.span`
   font-size: 12px;
   color: #57606a;
   margin-left: 1px;
+`;
+
+export const StarWrapper = styled.div`
+  display: inline-block;
 `;
 export const Star = styled.img`
   width: 14px;
