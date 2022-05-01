@@ -5,21 +5,22 @@ export const Wrapper = styled.div`
   width: 440px;
   height: 100%;
   margin-left: 110px;
+`;
 
-  #description {
-    width: 296px !important;
-    height: auto;
-    /* background-color: red; */
-    border: none;
-    resize: none;
-    margin-top: 18px;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 16px;
-    overflow: hidden;
-    /* margin-bottom: 10px; */
-    font-weight: 400;
-    outline: none;
-  }
+export const Description = styled.div`
+  width: 296px !important;
+  height: auto;
+  /* background-color: red; */
+  border: none;
+  resize: none;
+  margin-top: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+  /* margin-bottom: 10px; */
+  font-weight: 400;
+  outline: none;
+  margin-bottom: 14px;
 `;
 
 export const ProfileImg = styled.img`

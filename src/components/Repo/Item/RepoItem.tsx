@@ -6,7 +6,7 @@ import Fork from "../../../assets/svgfiles/fork.svg";
 import Star from "../../../assets/svgfiles/star.svg";
 
 const RepoItem = ({repo}: any) => {
-  console.log(repo);
+  // console.log(repo);
 
   const LangColor: any = {
     Java: "#b07219",

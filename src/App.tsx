@@ -12,6 +12,7 @@ function App() {
   const [loading, setLoading] = useState(true); //loading중일때
   const [user, setUser]: any = useState("");
 
+  // repo정보 불러옴
   useEffect(() => {
     fetch(`https://api.github.com/users/seoyeon-baek/repos`, {
       headers: {Authorization: "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"},
@@ -21,7 +22,19 @@ function App() {
         setRepo(data);
         setLoading(false);
       });
-  }, [user]);
+  }, []);
+
+  //user정보 불러옴
+  useEffect(() => {
+    fetch(`https://api.github.com/users/seoyeon-baek`, {
+      headers: {Authorization: "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"},
+    })
+      .then(res => res.json()) //json형태로 변환
+      .then(data => {
+        setUser(data);
+        setLoading(false);
+      });
+  }, []);
 
   return (
     <>

@@ -79,7 +79,7 @@ export const Alarm = styled.img``;
 export const Plus = styled.img`
   margin-left: 22px;
 `;
-export const Profile = styled.div`
+export const Profile = styled.img`
   width: 20px;
   height: 20px;
   border-radius: 100%;

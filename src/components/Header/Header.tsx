@@ -4,7 +4,7 @@ import Logo from "../../assets/svgfiles/logo.svg";
 import Alarm from "../../assets/svgfiles/alarm.svg";
 import Plus from "../../assets/svgfiles/plus.svg";
 
-const Header = (props: any, {user}: any) => {
+const Header = ({user}: any) => {
   const [search, setSearch] = useState("");
   const handleChange = (e: any) => setSearch(e.target.value);
 
@@ -30,7 +30,7 @@ const Header = (props: any, {user}: any) => {
       <S.ProfileWrapper>
         <S.Alarm src={Alarm} />
         <S.Plus src={Plus} />
-        <S.Profile></S.Profile>
+        <S.Profile src={user.avatar_url} />
       </S.ProfileWrapper>
     </S.Wrapper>
   );

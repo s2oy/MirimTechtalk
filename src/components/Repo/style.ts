@@ -2,13 +2,18 @@ import styled from "styled-components";
 
 export const TopWrapper = styled.div`
   float: left;
+  margin: 30px 0 -7px 460px;
 
   .pin {
-    /* display: inline-block !important; */
-    margin-top: 35px;
     font-size: 17px;
-    /* text-align: center; */
-    right: 300px;
+  }
+
+  .costom {
+    position: absolute;
+    right: 100px;
+    font-size: 12px;
+    color: #57606a;
+    font-weight: 600;
   }
 `;
 
