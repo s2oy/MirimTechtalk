@@ -7,6 +7,7 @@ import Star from "../../../assets/svgfiles/star.svg";
 
 const RepoItem = ({repo}: any) => {
   // console.log(repo);
+  console.log(repo.name, repo.language);
 
   const LangColor: any = {
     Java: "#b07219",
@@ -31,10 +32,12 @@ const RepoItem = ({repo}: any) => {
         <S.Description>{repo?.description}</S.Description>
 
         <S.BottomWrapper>
-          <S.LangWrapper>
-            <S.Color color={LangColor[repo.language]}></S.Color>
-            <S.Language>{repo.language}</S.Language>
-          </S.LangWrapper>
+          {repo.language && (
+            <S.LangWrapper>
+              <S.Color color={LangColor[repo.language]}></S.Color>
+              <S.Language>{repo.language}</S.Language>
+            </S.LangWrapper>
+          )}
 
           <S.ForkWrapper>
             <S.Fork src={Fork} />
