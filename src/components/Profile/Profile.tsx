@@ -3,7 +3,7 @@ import * as S from "./style";
 import Follow from "../../assets/svgfiles/follow.svg";
 
 const Profile = ({user}: {user: any}) => {
-  console.log(user);
+  // console.log(user);
   return (
     <>
       <S.Wrapper>

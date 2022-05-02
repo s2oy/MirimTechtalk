@@ -10,11 +10,12 @@ import Repo from "./components/Repo/Repo";
 function App() {
   const [repo, setRepo]: any = useState([]);
   const [loading, setLoading] = useState(true); //loading중일때
-  const [user, setUser]: any = useState("");
+  const [user, setUser]: any = useState("seoyeon-baek");
 
+  console.log(user);
   // repo정보 불러옴
   useEffect(() => {
-    fetch(`https://api.github.com/users/seoyeon-baek/repos`, {
+    fetch(`https://api.github.com/users/${user}/repos`, {
       headers: {Authorization: "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"},
     })
       .then(res => res.json()) //json형태로 변환
@@ -26,7 +27,7 @@ function App() {
 
   //user정보 불러옴
   useEffect(() => {
-    fetch(`https://api.github.com/users/seoyeon-baek`, {
+    fetch(`https://api.github.com/users/${user}`, {
       headers: {Authorization: "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"},
     })
       .then(res => res.json()) //json형태로 변환

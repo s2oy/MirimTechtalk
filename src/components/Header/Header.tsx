@@ -9,15 +9,14 @@ const Header = ({user}: any) => {
   const handleChange = (e: any) => setSearch(e.target.value);
 
   console.log(handleChange);
+  console.log(user);
   return (
     <S.Wrapper>
       <S.SearchWrapper>
         <S.Icon src={Logo} />
         <S.Search placeholder="Search or jump to..." onChange={handleChange} />
 
-        <button onClick={(props: any) => alert(props.onSearch(search))}>
-          /
-        </button>
+        <button>/</button>
       </S.SearchWrapper>
 
       <S.NavWrapper>
